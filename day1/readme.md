@@ -1,0 +1,1 @@
+écrit en scratch (pair avec F.Luce pour le 1.1)
