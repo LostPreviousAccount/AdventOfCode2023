@@ -1,0 +1,55 @@
+(not beautified)
+Pipe is 124
+cast Pipe
+deuxpoint is 58
+burn deuxpoint
+space is 32
+cast space
+Gscore is 0
+
+contains takes x
+i is 0
+let length be 0 with winningNb
+while i is lower than length
+if x is winningNb at i
+give true back
+
+build i up 
+
+give false back
+
+
+calcScore takes p
+if p is 1
+return p
+else
+put p-1 into newp
+return 2 of calcScore taking newp
+
+Line is 0
+Listen to the hate
+While the hate ain't mysterious
+scoreCard is 0
+iNb is 0
+split the hate with space + pipe + space
+split the hate at 0 into winningNb with deuxpoint
+split the hate at 1 into myNb with space
+let winningNb be winningNb at 1
+shatter winningNb with space
+roll winningNb
+let lengthNb be 0 with myNb
+roll myNb into nb
+while iNb is lower than lengthNb
+if nb aint mysterious and contains taking nb
+build scoreCard up
+
+build iNb up
+roll myNb into nb
+
+if scoreCard
+let Gscore be Gscore plus calcScore taking scoreCard
+
+Listen to the hate
+Build line up
+
+shout Gscore
