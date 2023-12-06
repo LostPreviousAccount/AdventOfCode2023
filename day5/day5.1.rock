@@ -1,0 +1,74 @@
+readMaps takes x
+Listen to stdin (y-to-z map: line)
+if stdin aint mysterious
+Listen to stdin
+rock maparray
+
+i is 0
+while stdin aint mysterious
+shatter stdin with " "
+let maparray at i be stdin
+Listen to stdin
+build i up
+
+give maparray back
+
+
+dothemap wants ar and j
+i is 0
+let range be 0 with ar 
+while i is lower than range
+put ar at i into r (r is "dest source range")
+put r at 1 into minr
+burn minr
+put r at 2 into maxr
+burn maxr
+let maxr be maxr plus minr
+if j is as great as minr and j is lower than maxr
+put r at 0 into dest
+burn dest
+let res be j minus minr plus dest
+give it back
+else
+build i up
+
+give j back
+
+
+tolocation wants aseed
+put dothemap taking arra 'n' aseed into ra
+put dothemap taking arrb 'n' ra into rb
+put dothemap taking arrc 'n' rb into rc
+put dothemap taking arrd 'n' rc into sdd
+put dothemap taking arre 'n' sdd into qsd
+put dothemap taking arrf 'n' qsd into aze
+put dothemap taking arrg 'n' aze into fgh
+give it back
+
+(main)
+listen to seed
+shatter seed with ": "
+shatter seed at 1 into seed with " "
+join seed into seeds with ","
+say "seeds:" + seeds
+
+listen to pass
+put readMaps taking 0 into arra 
+put readMaps taking 0 into arrb (stf)
+put readMaps taking 0 into arrc (ftw)
+put readMaps taking 0 into arrd (wtl)
+put readMaps taking 0 into arre (ltt)
+put readMaps taking 0 into arrf (tth)
+put readMaps taking 0 into arrg (htl)
+
+seedindex is 1
+let max be 0 with seed
+put tolocation taking seed at 0 into the min
+while seedindex is lower than max
+put tolocation taking seed at seedindex into current
+if the min is greater than current
+let the min be current
+
+build seedindex up
+
+shout "lowest location is:" + the min
